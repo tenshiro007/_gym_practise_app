@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content">
+
+    <TextView
+        android:id="@+id/txtEnterDetail"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Enter Detail"
+        android:textStyle="bold"
+        android:layout_margin="20dp"/>
+    <TextView
+        android:id="@+id/txtName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Training Name"
+        android:layout_below="@+id/txtEnterDetail"
+        android:layout_centerHorizontal="true"/>
+    <TextView
+        android:id="@+id/txtHowlong"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/txtName"
+        android:text="How much time do you have in mind?"
+        android:layout_centerHorizontal="true"
+        android:layout_margin="10dp"/>
+    <EditText
+        android:id="@+id/editTxtminutes"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:hint="Minutes"
+        android:layout_below="@+id/txtHowlong"
+        android:layout_centerHorizontal="true"/>
+    <TextView
+        android:id="@+id/txtSelectDay"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Select the day"
+        android:layout_below="@+id/editTxtminutes"
+        android:layout_margin="10dp"
+        android:layout_centerHorizontal="true"/>
+    <Spinner
+        android:id="@+id/spinnerDays"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/txtSelectDay"
+        android:entries="@array/days"
+        android:layout_centerHorizontal="true"/>
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="10dp"
+        android:layout_below="@+id/spinnerDays">
+
+        <Button
+            android:id="@+id/btnDismiss"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="DISMISS"
+            android:textAllCaps="false"/>
+        <Button
+            android:id="@+id/btnAdd"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Add"
+            android:layout_toRightOf="@+id/btnDismiss"
+            android:layout_marginStart="10dp"/>
+
+    </RelativeLayout>
+
+
+
+</RelativeLayout>
